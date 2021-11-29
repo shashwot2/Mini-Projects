@@ -1,6 +1,5 @@
 def pig_it(text):# problem derived from https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python
-    s = text.split(" ")"""Note that this solution is way below optimal space or time complexity, I'll have to revise it at some point and is only meant as a solution that might
-    be easier to understand because of it's similarlity to other language syntactical usage"""
+    s = text.split(" ")"""Note that this solution is way below optimal space or time complexity; it is non pythonic and i'll have to revise it at some point. It is an easier implementataion to understand because of it's similarlity to other language's syntactical usage"""
     x = []
     b = ""
     specials = "[@_!#$%^&*()<>?/\|}{~:]" #list contaning all the special elements
