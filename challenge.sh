@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-NAME=$1;
-FAVSPORT=$2;
+number=$1
+x=1
+while [ $x -le $number ]
+do
+    echo $x
+    ((x++))
+done
 
-echo $1 s favorite sport is $2; 
-
+echo "Loop finished"
 exit 0
