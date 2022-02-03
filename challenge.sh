@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-number=$1
-x=1
-while [ $x -le $number ]
-do
-    echo $x
-    ((x++))
-done
+counter=0
 
-echo "Loop finished"
-exit 0
+while IFS='' read -r LINE
+do
+echo "LINE $COUNT: $LINE"
+    if [ $COUNT -gt 9 ]
+then
+    break
+fi
+((COUNT++))
+done < $1
